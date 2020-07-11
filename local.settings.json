@@ -1,9 +1,10 @@
 {
-  "IsEncrypted": true,
+  "IsEncrypted": false,
   "Values": {
-    "FUNCTIONS_WORKER_RUNTIME": "CfDJ8KvJ6DmYyMJCgkPKMHi9yggxobSNL+EiBudqjTbkN08MV8FPGx7WqKyJXi1vK5/3O48YnxQvGjJtBiH2gbzh8qUxrA2On+1JRf1xQeWwdKwATocSwT1CMT9SN2gtzXs0ZQ=="
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=neighbourlyapp2;AccountKey=d8iWSF/n2XUOd+7WiIe8Bnnpm7TJDIZn7F3PRbhU7PqjkiHUFcZtXWxrHvB9vEmatAqJAgYJrj7nO1yTxhzAfQ==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_EXTENSION_VERSION": "~3",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "18139ab4-ab5e-4d14-8fd9-4c1719236e16"
   },
-  "ConnectionStrings": {},
-
-  "AzureWebJobsStorage": ""
+  "ConnectionStrings": {}
 }

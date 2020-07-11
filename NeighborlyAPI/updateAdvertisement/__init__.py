@@ -9,12 +9,13 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     if request:
         try:
-            url = "localhost"  # TODO: Update with appropriate MongoDB connection information
+            url = "mongodb://neighbourlydb:5jDADX7YX11L3Klw7Td7aq7McOaoq08cUR5eDSSJp3C10gpW5lmKsH1x8snfliJRy0VUML2j4gfYMOmv3WEEDQ==@neighbourlydb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@neighbourlydb@"
             client = pymongo.MongoClient(url)
-            database = client['azure']
+            database = client['udacity-mongodb']
             collection = database['advertisements']
             
-            filter_query = {'_id': ObjectId(id)}
+            # filter_query = {'_id': ObjectId(id)} # THIS LINE OF CODE IS NOT WORKING SO COMMENTING IT OUT
+            filter_query = {'_id': id}
             update_query = {"$set": eval(request)}
             rec_id1 = collection.update_one(filter_query, update_query)
             return func.HttpResponse(status_code=200)
